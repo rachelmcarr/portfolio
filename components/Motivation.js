@@ -2,7 +2,9 @@
 export default function Motivation() {
   return (
     <div className="bg-black text-white">
-      <section className="w-full min-h-screen px-12 md:px-24 py-20 bg-black text-white">
+      <section 
+      id="motivation"
+      className="w-full min-h-screen px-12 md:px-24 py-20 bg-black text-white">
         <div className="flex flex-col gap-12 md:gap-20">
           {/* Top Row: Heading and Signature */}
           <div className="flex justify-between items-start w-full">

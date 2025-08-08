@@ -4,7 +4,9 @@ import ProjectCard from "./ProjectCard";
 
 export default function ProjectsPage() {
   return (
-    <section className="bg-black text-white">
+    <section 
+    id="projects"
+    className="bg-black text-white">
       <div className="max-w-[1440px] mx-auto px-6 md:px-10 lg:px-12 py-12">
         {/* Header */}
         <div className="flex justify-between items-start">

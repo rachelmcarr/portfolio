@@ -4,10 +4,10 @@
 
 /* Custom global resets */
 html, body {
-  scroll-behavior: smooth;
   font-family: 'Inter', sans-serif;
   background-color: #fff;
   color: #000;
+  cursor: none;
 }
 
 a {
@@ -17,4 +17,10 @@ a {
 img {
   max-width: 100%;
   height: auto;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html, body {
+    cursor: auto;
+  }
 }

@@ -116,38 +116,39 @@ export default function ProjectDetail() {
       </div>
 
       {/* NEXT PROJECT */}
-      <div className="px-6 md:px-12 max-w-[1440px] mx-auto py-20 border-t border-gray-800">
-        <h3 className="text-lg font-bold uppercase mb-6">Next Project</h3>
-        <div className="grid md:grid-cols-2 gap-8">
-          {projectsData
-            .filter((p) => p.slug !== project.slug)
-            .slice(0, 1)
-            .map((nextProj) => (
-              <Link
-                key={nextProj.slug}
-                href={`/work/${nextProj.slug}`}
-                className="group"
-              >
-                <div className="aspect-square overflow-hidden">
-                  <img
-                    src={nextProj.mainImage}
-                    alt={nextProj.title}
-                    className="w-full h-full object-cover group-hover:scale-105 transition-transform"
-                  />
+      <div className="px-6 md:px-12 max-w-[1440px] mx-auto py-20 border-t border-white/10">
+      <h3 className="text-lg font-bold uppercase mb-6">Next Project</h3>
+
+      {(() => {
+        const currentIndex = projectsData.findIndex(p => p.slug === project.slug);
+        const nextIndex = (currentIndex + 1) % projectsData.length;
+        const nextProj = projectsData[nextIndex];
+
+        return (
+          <div className="grid md:grid-cols-2 gap-8">
+            <Link href={`/projects/${nextProj.slug}`} className="group block max-w-[720px]">
+              <div className="aspect-[4/3] overflow-hidden">
+                <img
+                  src={nextProj.mainImage}
+                  alt={nextProj.title}
+                  className="w-full h-full object-cover transition-transform group-hover:scale-105"
+                />
+              </div>
+
+              <div className="mt-3 flex justify-between items-center">
+                <div>
+                  <p className="font-bold uppercase">{nextProj.title}</p>
+                  <p className="text-sm opacity-70">{nextProj.category}</p>
                 </div>
-                <div className="mt-3 flex justify-between items-center">
-                  <div>
-                    <p className="font-bold uppercase">{nextProj.title}</p>
-                    <p className="text-sm opacity-70">{nextProj.category}</p>
-                  </div>
-                  <p className="text-[#00CFFF] font-bold">
-                    [{nextProj.projectNumber}]
-                  </p>
-                </div>
-              </Link>
-            ))}
-        </div>
-      </div>
+                <span className="text-[#00CFFF] font-bold">
+                  [{String(nextIndex + 1).padStart(2, "0")}]
+                </span>
+              </div>
+            </Link>
+          </div>
+        );
+      })()}
+    </div>
     </div>
   );
 }

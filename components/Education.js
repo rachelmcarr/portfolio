@@ -1,7 +1,9 @@
 // pages/education.js
 export default function Education() {
   return (
-    <section className="bg-black text-white px-6 md:px-12 lg:px-20 py-20">
+    <section 
+    id="education"
+    className="bg-black text-white px-6 md:px-12 lg:px-20 py-20">
       {/* Title */}
       <div className="text-center mb-16">
         <p className="text-sm uppercase tracking-widest text-gray-400">The Journey</p>

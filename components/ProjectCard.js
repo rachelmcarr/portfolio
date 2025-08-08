@@ -19,13 +19,6 @@ export default function ProjectCard({ project }) {
             className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-[1.03]"
           />
         </div>
-
-        {/* VIEW pill on hover */}
-        <div className="pointer-events-none absolute left-1/2 -translate-x-1/2 top-4 opacity-0 group-hover:opacity-100 transition-opacity duration-300">
-          <span className="bg-white/85 text-black text-[11px] tracking-[0.25em] px-3 py-[6px] rounded-sm uppercase">
-            View
-          </span>
-        </div>
       </div>
 
       {/* Meta strip */}

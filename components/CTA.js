@@ -1,3 +1,5 @@
+import HashLink from "./HashLink";
+
 export default function CTA() {
   return (
     <section className="bg-black text-white w-full px-6 md:px-24 py-20">
@@ -46,7 +48,7 @@ export default function CTA() {
       {/* Footer */}
       <footer className="mt-24 border-t border-white/20 pt-6 flex flex-col md:flex-row justify-between items-center text-sm">
         <span className="mb-4 md:mb-0">&copy;2025</span>
-        <span className="uppercase font-semibold">BACK TO TOP</span>
+        <span><HashLink href="#home-hero" className="uppercase font-semibold">BACK TO TOP</HashLink></span>
       </footer>
     </section>
   );

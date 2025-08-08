@@ -1,6 +1,8 @@
 export default function Experience() {
   return (
-    <div className="bg-black text-white w-full min-h-screen px-6 md:px-24 py-20">
+    <div 
+    id="experience"
+    className="bg-black text-white w-full min-h-screen px-6 md:px-24 py-20">
       {/* Title */}
       <div className="mb-16">
         <h2 className="font-inter font-bold text-[90px] leading-[87px] tracking-[-4.3px] uppercase">EXPERIENCE</h2>

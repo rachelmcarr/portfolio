@@ -1,3 +1,4 @@
+import HashLink from './HashLink'
 import Meta from './Meta'
 import PageTransition from './PageTransition'
 import Link from 'next/link'
@@ -9,12 +10,12 @@ export default function Layout({ children }) {
       <header className="flex justify-between items-center px-[40px] py-[20px] bg-black text-white">
         <span className="text-sm tracking-wider uppercase">RACHELCARR</span>
         <nav className="flex gap-6">
-          <a href="#about" className="text-sm">[ ABOUT ]</a>
-          <a href="#projects" className="text-sm">[ PROJECTS ]</a>
-          <a href="#education" className="text-sm">[ EDUCATION ]</a>
-          <a href="#motivation" className="text-sm">[ MOTIVATION ]</a>
-          <a href="#experience" className="text-sm">[ EXPERIENCE ]</a>
-          <a href="#skills" className="text-sm">[ SKILLS ]</a>
+          <HashLink href="#about" className="text-sm">[ ABOUT ]</HashLink>
+          <HashLink href="#projects" className="text-sm">[ PROJECTS ]</HashLink>
+          <HashLink href="#education" className="text-sm">[ EDUCATION ]</HashLink>
+          <HashLink href="#motivation" className="text-sm">[ MOTIVATION ]</HashLink>
+          <HashLink href="#experience" className="text-sm">[ EXPERIENCE ]</HashLink>
+          <HashLink href="#skills" className="text-sm">[ SKILLS ]</HashLink>
           <a href="#contact" className="bg-white text-black px-4 py-1 rounded font-semibold text-sm">
             CONTACT NOW
           </a>
