@@ -1,4 +1,5 @@
 import HashLink from "./HashLink";
+import Link from "next/link";
 
 export default function CTA() {
   return (
@@ -11,20 +12,18 @@ export default function CTA() {
           </h2>
           <p className="mt-4 text-md md:text-lg font-semibold uppercase">
             "Driven to learn. Ready to build. Let’s create something meaningful together."
-          </p>
+          </p> <br></br>
 
-          <button className="mt-6 px-4 py-2 border border-white hover:bg-white hover:text-black font-semibold text-sm uppercase tracking-wider transition duration-200">
-            Contact Now
-          </button>
+          <Link href="/contact#contact-form" className="mt-6 px-4 py-2 border border-white hover:bg-white hover:text-black font-semibold text-sm uppercase tracking-wider transition duration-200">Contact Now</Link>
 
           <div className="mt-6 space-x-6 text-sm font-semibold uppercase">
-            <a href="https://github.com/yourusername" target="_blank" rel="noopener noreferrer" className="underline hover:text-cyan-400">
+            <a href="https://github.com/rachelmcarr" target="_blank" rel="noopener noreferrer" className="underline hover:text-cyan-400">
               GitHub 🡭
             </a>
-            <a href="https://your-handshake-url" target="_blank" rel="noopener noreferrer" className="underline hover:text-cyan-400">
+            <a href="https://wgu.joinhandshake.com/profiles/h29daa" target="_blank" rel="noopener noreferrer" className="underline hover:text-cyan-400">
               Handshake 🡭
             </a>
-            <a href="https://linkedin.com/in/yourprofile" target="_blank" rel="noopener noreferrer" className="underline hover:text-cyan-400">
+            <a href="www.linkedin.com/in/rachelmcarr" target="_blank" rel="noopener noreferrer" className="underline hover:text-cyan-400">
               LinkedIn 🡭
             </a>
           </div>

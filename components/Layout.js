@@ -16,9 +16,7 @@ export default function Layout({ children }) {
           <HashLink href="#motivation" className="text-sm">[ MOTIVATION ]</HashLink>
           <HashLink href="#experience" className="text-sm">[ EXPERIENCE ]</HashLink>
           <HashLink href="#skills" className="text-sm">[ SKILLS ]</HashLink>
-          <a href="#contact" className="bg-white text-black px-4 py-1 rounded font-semibold text-sm">
-            CONTACT NOW
-          </a>
+          <Link href="/contact#contact-form" className="btn">Contact Now</Link>
         </nav>
       </header>
       <PageTransition>
